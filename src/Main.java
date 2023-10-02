@@ -11,6 +11,8 @@ public class Main {
         new ListerMots(args[0]).imprimerSi(new And(new CommencePar('t'), new Longueur(5)));
         new ListerMots(args[0]).imprimerSi(new Or(new CommencePar('t'), new Longueur(5)));
         new ListerMots(args[0]).imprimerSi(new Not(new Longueur(5)));
-
+        Compteur c=new Compteur(new And(new CommencePar('t'), new Longueur(1)));
+        new ListerMots(args[0]).imprimerSi(c);
+        System.out.println(c.getCompteur());
     }
 }
